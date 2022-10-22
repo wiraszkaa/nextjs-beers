@@ -1,0 +1,44 @@
+.navigation {
+  min-width: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  padding: 1.5vw 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+  background-color: rgb(204, 168, 48);
+}
+
+.logo {
+  color: rgb(233, 233, 233);
+  cursor: pointer;
+  padding-left: 5%;
+  font-size: calc(1rem + 0.8vw);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  padding-right: 5%;
+}
+
+@media screen and (max-width: 900px) {
+  .navigation ul {
+    padding: 0;
+  }
+
+  .navigation li {
+    margin: 0 1vw;
+  }
+
+  .logo {
+    padding-left: 16px;
+    font-size: calc(12px + 0.8vw);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .navigation {
+    background-color: rgb(181, 144, 8);
+  }
+}

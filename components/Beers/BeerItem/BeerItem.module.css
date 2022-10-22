@@ -1,0 +1,36 @@
+.beer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.beer button {
+  border: none;
+  background: none;
+}
+
+.beer h1 {
+  margin-right: 1.5rem;
+}
+
+.image {
+  position: relative;
+  width: 40px;
+  aspect-ratio: 0.3;
+}
+
+.showInfo {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.showInfo a {
+  text-decoration: none;
+  font-size: calc(10px + 1vw);
+  color: rgb(53, 43, 43);
+  border: 1px solid rgb(53, 43, 43);
+  border-radius: 20px;
+  padding: 0.5rem;
+}

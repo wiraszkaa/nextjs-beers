@@ -1,0 +1,32 @@
+.searchBar {
+  width: 50%;
+  height: calc(17px + 2vw);
+  padding: 2vw 0;
+  opacity: 0.7;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  position: relative;
+  height: 70%;
+  aspect-ratio: 0.6;
+  padding-right: 0.8vw;
+}
+
+.searchBar input,
+.searchBar select {
+  font: inherit;
+  font-size: calc(10px + 1.5vw);
+  border-radius: calc(5px + 0.8vw);
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.searchBar input:focus {
+  outline: none;
+  background: none;
+}
