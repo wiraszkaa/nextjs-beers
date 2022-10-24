@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .beer button {
@@ -11,7 +11,9 @@
 }
 
 .beer h1 {
-  margin-right: 1.5rem;
+  text-align: center;
+  margin-right: calc(5px + 0.5vw);
+  max-width: 40vw;
 }
 
 .image {
@@ -33,4 +35,11 @@
   border: 1px solid rgb(53, 43, 43);
   border-radius: 20px;
   padding: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .showInfo a {
+    color: white;
+    border: 1px solid white;
+  }
 }

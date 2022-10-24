@@ -10,7 +10,7 @@ const Navigation = () => {
     <header className={styles.navigation}>
       <div className={styles.logo}>
         <Link href="/">
-          <span>Beers</span>
+          <span>Beer Madness</span>
         </Link>
       </div>
 

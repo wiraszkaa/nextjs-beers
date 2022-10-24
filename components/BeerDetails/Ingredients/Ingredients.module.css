@@ -1,0 +1,30 @@
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.ingredients h1 {
+    text-align: center;
+}
+
+.ingredientType {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+}
+
+.ingredientType h2 {
+    text-align: left;
+    width: 100%;
+}
+
+.ingredientType ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ingredientType li {
+    margin-right: 2rem;
+}

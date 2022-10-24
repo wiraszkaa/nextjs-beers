@@ -1,5 +1,7 @@
-export default function BeerDetails(props) {
-  return <div>{props.beer.name}</div>;
+import BeerDetails from "../../components/BeerDetails/BeerDetails";
+
+export default function BeerDetailsPage(props) {
+  return <BeerDetails beer={props.beer}/>
 }
 
 export async function getStaticPaths() {
