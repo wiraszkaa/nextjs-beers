@@ -10,18 +10,15 @@ body {
     scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 h1 {
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   font-size: calc(20px + 2vw);
   color: rgb(37, 4, 4);
+}
+
+h2 {
+  letter-spacing: -1px;
+  font-size: calc(15px + 1.5vw);
 }
 
 p {
@@ -72,13 +69,22 @@ p {
   }
   body {
     color: rgb(247, 233, 233);
-    background: rgb(54, 38, 1);
+    background: #091B1A;
   }
   h1 {
     color: rgb(247, 233, 233);
   }
   p {
     color: rgb(219, 207, 207);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: calc(20px + 3vw);
+  }
+  p {
+    font-size: calc(10px + 2vw);
   }
 }
 

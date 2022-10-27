@@ -1,30 +1,47 @@
 .ingredients {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-}
-
-.ingredients h1 {
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  text-align: center;
 }
 
 .ingredientType {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .ingredientType h2 {
-    text-align: left;
-    width: 100%;
+  width: 100%;
 }
 
 .ingredientType ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
-.ingredientType li {
-    margin-right: 2rem;
+.left {
+  align-items: flex-start;
+}
+
+.left li {
+  margin-right: 2rem;
+}
+
+.right {
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 1000px) {
+  .ingredients {
+    width: 90vw;
+  }
+
+  .left li {
+    margin-right: 1rem;
+  }
 }

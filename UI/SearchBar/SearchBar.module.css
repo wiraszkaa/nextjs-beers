@@ -11,8 +11,8 @@
 .image {
   position: relative;
   height: 70%;
-  aspect-ratio: 0.6;
-  padding-right: 0.8vw;
+  aspect-ratio: 1;
+  margin-right: 0.2vw;
 }
 
 .searchBar input,

@@ -4,3 +4,22 @@
     flex-direction: column;
     align-items: center;
 }
+
+.about p {
+    font-weight: bold;
+}
+
+.about ul {
+    padding-left: 15px;
+}
+
+.about li {
+    font-size: larger;
+    margin: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+    .about {
+        width: 90vw;
+    }
+}

@@ -26,10 +26,10 @@ const BeerItem = (props) => {
         </button>
         <h1>{props.beer.name}</h1>
         <div className={styles.image}>
-          <Image src={props.beer.image} alt={props.beer.name} layout="fill" />
+          <Image src={props.beer.image} alt={props.beer.name} width={40} height={120} layout="responsive" />
         </div>
         <div className={styles.showInfo}>
-          <Link href={`/${props.beer.id}`}>More info</Link>
+          <Link href={`/${props.beer.id}`}>More Info</Link>
         </div>
       </Card>
     </li>

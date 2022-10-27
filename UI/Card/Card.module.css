@@ -8,13 +8,13 @@
 
 .margin {
   margin: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
     opacity: 1;
     background: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 }

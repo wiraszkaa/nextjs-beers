@@ -38,7 +38,7 @@ const About = (props) => {
     <Card className={styles.about}>
       <h1>About</h1>
       <PropertyList properties={properties} />
-      <p>It is best with:</p>
+      <h2>It is best with:</h2>
       <ul>
       {props.beer.food_pairing.map((food, index) => (<li key={index}>{food}</li>))}
       </ul>

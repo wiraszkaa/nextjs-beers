@@ -1,6 +1,5 @@
 import ProgressBar from "../ProgressBar/ProgressBar";
 import styles from "./PropertyList.module.css";
-import Card from "../../UI/Card/Card";
 
 const PropertyList = (props) => {
   return (

@@ -25,8 +25,8 @@ const IngredientsType = (props) => {
   return (
     <div className={styles.ingredientType}>
       <h2>{props.type}</h2>
-      <ul>{names}</ul>
-      <ul>{amount}</ul>
+      <ul className={styles.left}>{names}</ul>
+      <ul className={styles.right}>{amount}</ul>
     </div>
   );
 };
