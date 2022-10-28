@@ -7,7 +7,7 @@
 }
 
 .beer button {
-  width: 100px;
+  width: calc(50px + 1vw);
   border: none;
   background: none;
 }
@@ -18,7 +18,7 @@
 }
 
 .image {
-  margin-left: 50px;
+  margin-left: 1vw;
   position: relative;
   width: 50px;
   height: 150px;

@@ -22,6 +22,24 @@
   padding-right: 5%;
 }
 
+.buttons a {
+  text-decoration: none;
+  font-size: calc(1.5rem + 0.5vw);
+}
+
+.buttons a:hover {
+  color: rgb(173, 173, 173);
+  transition: 0.5s;
+}
+
+.link {
+  color: rgb(233, 233, 233);
+}
+
+.active {
+  color: rgb(173, 173, 173);
+}
+
 @media screen and (max-width: 900px) {
   .navigation ul {
     padding: 0;

@@ -15,9 +15,12 @@ const Navigation = () => {
       </div>
 
       <div className={styles.buttons}>
-      <LiquidButton href="/favourites" active={asPath === "/favourites"}>
-        Favourites
-      </LiquidButton>
+        <Link href="/favourites">
+          <a className={asPath === "/favourites" ? styles.active : styles.link}>Favourites</a>
+        </Link>
+        {/* <LiquidButton href="/favourites" active={asPath === "/favourites"}>
+          Favourites
+        </LiquidButton> */}
       </div>
     </header>
   );

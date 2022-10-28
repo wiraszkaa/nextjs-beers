@@ -13,11 +13,16 @@
     margin: 0.5rem 0;
 }
 
-.property span {
+.tag {
+    display: flex;
+    flex-direction: column;
     font-size: calc(1rem + 1vw);
-    width: calc(4.7rem + 6.5vw);
-    text-align: center;
+    width: calc(5rem + 6.5vw);
     text-align: left;
+}
+
+.description {
+    font-size: calc(0.6rem + 0.5vw);
 }
 
 @media screen and (max-width: 1100px) {
