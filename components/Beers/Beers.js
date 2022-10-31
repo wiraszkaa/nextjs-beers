@@ -6,10 +6,7 @@ const Beers = (props) => {
     <div className={styles.beers}>
       <ul>
         {props.beers.map((beer) => (
-          <BeerItem
-            key={beer.id}
-            beer={beer}
-          />
+          <BeerItem key={beer.id} beer={beer} />
         ))}
       </ul>
     </div>

@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Navigation.module.css";
-import LiquidButton from "../LiquidButton/LiquidButton";
+import followIcon from "../../assets/follow.png";
 
 const Navigation = () => {
   const { asPath } = useRouter();
@@ -16,11 +17,13 @@ const Navigation = () => {
 
       <div className={styles.buttons}>
         <Link href="/favourites">
-          <a className={asPath === "/favourites" ? styles.active : styles.link}>Favourites</a>
+          <a className={asPath === "/favourites" ? styles.active : styles.link}>
+            <div className={styles.image}>
+              <Image src={followIcon} layout="fill" />
+            </div>
+            Favourites
+          </a>
         </Link>
-        {/* <LiquidButton href="/favourites" active={asPath === "/favourites"}>
-          Favourites
-        </LiquidButton> */}
       </div>
     </header>
   );

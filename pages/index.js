@@ -26,7 +26,7 @@ export default function Home(props) {
     <>
       <Head>
         <title>Beers</title>
-        <meta name="description" content="Check the best kinds of beer" />
+        <meta name="description" content="Check the beers You love and find new ones." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">

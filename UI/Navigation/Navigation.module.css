@@ -13,7 +13,7 @@
   color: rgb(233, 233, 233);
   cursor: pointer;
   padding-left: 5%;
-  font-size: calc(1rem + 0.8vw);
+  font-size: calc(1rem + 1vw);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -24,12 +24,21 @@
 
 .buttons a {
   text-decoration: none;
-  font-size: calc(1.5rem + 0.5vw);
+  font-size: calc(1rem + 0.8vw);
+  display: flex;
+  align-items: center;
 }
 
 .buttons a:hover {
   color: rgb(173, 173, 173);
   transition: 0.5s;
+}
+
+.image {
+  position: relative;
+  height: calc(20px + 2vw);
+  aspect-ratio: 1;
+  margin-right: 0.5vw;
 }
 
 .link {

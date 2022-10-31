@@ -3,10 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.about p {
-    font-weight: bold;
+    animation: slideLeft 0.5s ease-in-out;
 }
 
 .about ul {
@@ -21,5 +18,14 @@
 @media screen and (max-width: 1000px) {
     .about {
         width: 90vw;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }

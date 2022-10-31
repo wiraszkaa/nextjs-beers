@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
+  width: 80vw;
+  opacity: 0;
 }
 
 .beer button {
@@ -45,6 +47,7 @@
 .showInfo a:hover {
   background: none;
   color: rgb(53, 43, 43);
+  border: none;
   transition: 0.5s;
 }
 
@@ -57,7 +60,7 @@
 
   .showInfo a:hover {
     color: white;
-    background: #091B1A;
+    background: #091b1a;
   }
 
   .image {

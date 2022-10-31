@@ -4,6 +4,7 @@
   align-items: center;
   width: 50vw;
   text-align: center;
+  animation: slideRight 0.5s ease-in-out; 
 }
 
 .ingredientType {
@@ -43,5 +44,14 @@
 
   .left li {
     margin-right: 1rem;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

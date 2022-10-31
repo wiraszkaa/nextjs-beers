@@ -21,6 +21,7 @@ const BeerDetails = (props) => {
       </Card>
       <About beer={beer} />
       <Ingredients ingredients={beer.ingredients} />
+      <p>Contributed by {beer.contributed_by}</p>
     </div>
   );
 };

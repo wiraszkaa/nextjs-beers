@@ -45,7 +45,7 @@ p {
 
 .icon {
   position: relative;
-  height: calc(30px + 4vw);
+  height: calc(50px + 4vw);
   aspect-ratio: 1;
   margin-right: calc(5px + 0.5vw);
 }
