@@ -1,34 +1,55 @@
 .beer {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 1rem 2rem;
   width: 80vw;
 }
 
 .beer button {
-  width: calc(50px + 1vw);
+  aspect-ratio: 1;
+  width: calc(30px + 10vw);
   border: none;
   background: none;
+  cursor: pointer;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .beer h1 {
+  margin: 0;
+  margin-bottom: 0.5rem;
   text-align: center;
-  max-width: 60vw;
+  max-width: 45vw;
+}
+
+.beer p {
+  margin: 0;
+  text-align: center;
+  max-width: 40vw;
+}
+
+.favourite {
+  position: relative;
+  aspect-ratio: 1;
+  width: calc(40px + 4vw);
 }
 
 .image {
-  margin-left: 1vw;
   position: relative;
-  width: 50px;
-  height: 150px;
-  padding: 0.5rem;
-  border-radius: 20px;
+  width: calc(30px + 10vw);
+  aspect-ratio: 1;
+  border-radius: 10px;
 }
 
 .showInfo {
-  margin: 1rem 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   width: 100%;
   text-align: center;
 }
@@ -36,30 +57,30 @@
 .showInfo a {
   text-decoration: none;
   font-size: calc(10px + 1vw);
-  color: white;
-  background: rgb(181, 144, 8);
-  border: 2px solid rgb(181, 144, 8);
-  border-radius: 20px;
+  color: rgb(53, 43, 43);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
   padding: 0.5rem;
 }
 
 .showInfo a:hover {
   background: none;
-  color: rgb(53, 43, 43);
-  border: none;
+  color: white;
+  background: rgb(181, 144, 8);
   transition: 0.5s;
 }
 
 @media (prefers-color-scheme: dark) {
   .showInfo a {
     color: white;
-    background: rgb(181, 144, 8);
+    background: none;
     border: 1px solid rgb(181, 144, 8);
+    box-shadow: none;
   }
 
   .showInfo a:hover {
     color: white;
-    background: #091b1a;
+    background: rgb(181, 144, 8);
   }
 
   .image {
@@ -71,7 +92,10 @@
 @media screen and (max-width: 1000px) {
   .beer h1 {
     font-size: calc(15px + 2vw);
-    text-align: center;
     max-width: 30vw;
+  }
+
+  .beer p {
+    font-size: calc(8px + 1vw);
   }
 }

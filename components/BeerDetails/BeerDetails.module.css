@@ -13,10 +13,25 @@
   animation: slideRight 0.5s ease-in-out;
 }
 
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer button {
+  background: none;
+  border: none;
+  position: absolute;
+  left: -5px;
+  z-index: 1;
+  width: calc(2.5rem + 2vw);
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
 .image {
   position: relative;
-  height: calc(12rem + 14vw);
-  aspect-ratio: 0.3;
+  height: calc(8rem + 8vw);
+  aspect-ratio: 1;
   border-radius: 20px;
 }
 
@@ -43,12 +58,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .image {
-      background: white;
-      border: 1px solid rgb(181, 144, 8);
-      border: 6px solid white;
-    }
+  .image {
+    background: white;
+    border: 1px solid rgb(181, 144, 8);
+    border: 6px solid white;
   }
+
+  .imageContainer button {
+    left: 0;
+  }
+}
 
 @keyframes slideRight {
   0% {

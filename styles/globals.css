@@ -43,13 +43,6 @@ p {
   align-items: center;
 }
 
-.icon {
-  position: relative;
-  height: calc(50px + 4vw);
-  aspect-ratio: 1;
-  margin-right: calc(5px + 0.5vw);
-}
-
 .slideUp {
   animation: slideUp 1s ease-in-out;
 }

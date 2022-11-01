@@ -8,7 +8,6 @@ import favouriteIcon from "../../../assets/follow.png";
 import notFavouriteIcon from "../../../assets/unfollow.png";
 
 const BeerItem = (props) => {
-  const [appeared, setAppeared] = useState(false);
   const favouritesCtx = useContext(Favourites);
 
   const favouritesHandler = () => {
@@ -21,9 +20,9 @@ const BeerItem = (props) => {
 
   return (
     <li>
-      <Card className={`${styles.beer} ${appeared ? styles.appeared : ""}`}>
+      <Card className={styles.beer}>
         <button onClick={favouritesHandler}>
-          <div className="icon">
+          <div className={styles.favourite}>
             <Image
               src={isFavourite ? favouriteIcon : notFavouriteIcon}
               alt="favourite"
@@ -31,14 +30,16 @@ const BeerItem = (props) => {
             />
           </div>
         </button>
-        <h1>{props.beer.name}</h1>
+        <div className={styles.text}>
+          <h1>{props.beer.name}</h1>
+          <p>{props.beer.tagline}</p>
+        </div>
         <div className={styles.image}>
           <Image
             src={props.beer.image}
             alt={props.beer.name}
-            width={40}
-            height={120}
-            layout="responsive"
+            layout="fill"
+            objectFit="contain"
           />
         </div>
         <div className={styles.showInfo}>

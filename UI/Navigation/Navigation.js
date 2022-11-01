@@ -21,14 +21,14 @@ const Navigation = () => {
 
       <Link href="/favourites">
         <div
-          className={`${styles.buttons} ${
+          className={`${styles.button} ${
             asPath === "/favourites" ? styles.active : ""
           }`}
         >
           <div className={styles.image}>
             <Image src={followIcon} layout="fill" />
           </div>
-          <span>Favourites</span>
+          <span>FAVOURITES</span>
         </div>
       </Link>
     </header>
