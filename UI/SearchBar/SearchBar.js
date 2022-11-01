@@ -16,7 +16,7 @@ const SearchBar = (props) => {
   };
 
   return (
-    <div className={styles.searchBar}>
+    <div className={`${styles.searchBar} slideDown`}>
       <div className={styles.image}>
         <Image src={findIcon} alt="Find" layout="fill" />
       </div>

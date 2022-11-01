@@ -10,6 +10,8 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   color: rgb(233, 233, 233);
   cursor: pointer;
   padding-left: 5%;
@@ -19,18 +21,20 @@
 }
 
 .buttons {
-  padding-right: 5%;
-}
-
-.buttons a {
-  text-decoration: none;
-  font-size: calc(1rem + 0.8vw);
+  color: rgb(233, 233, 233);
   display: flex;
   align-items: center;
+  padding-right: 5%;
+  cursor: pointer;
 }
 
-.buttons a:hover {
-  color: rgb(173, 173, 173);
+.buttons span {
+  text-decoration: none;
+  font-size: calc(1rem + 0.8vw);
+}
+
+.buttons:hover {
+  color: rgb(191, 191, 191);
   transition: 0.5s;
 }
 
@@ -41,12 +45,8 @@
   margin-right: 0.5vw;
 }
 
-.link {
-  color: rgb(233, 233, 233);
-}
-
 .active {
-  color: rgb(173, 173, 173);
+  color: rgb(191, 191, 191);
 }
 
 @media screen and (max-width: 900px) {

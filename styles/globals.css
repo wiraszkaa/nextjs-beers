@@ -54,9 +54,22 @@ p {
   animation: slideUp 1s ease-in-out;
 }
 
+.slideDown {
+  animation: slideDown 0.5s ease-in-out;
+}
+
 @keyframes slideUp {
   0% {
     transform: translateY(500%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-200%);
   }
   100% {
     transform: translateY(0);
