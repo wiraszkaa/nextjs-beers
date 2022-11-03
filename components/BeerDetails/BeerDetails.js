@@ -24,7 +24,7 @@ const BeerDetails = (props) => {
     <div className={styles.beerDetails}>
       <Card className={styles.hero}>
         <div className={styles.imageContainer}>
-          <button className={styles.favourite} onClick={favouritesHandler}>
+          <button onClick={favouritesHandler}>
             <Image
               src={isFavourite ? favouriteIcon : notFavouriteIcon}
               alt="favourite"

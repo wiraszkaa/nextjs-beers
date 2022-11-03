@@ -37,7 +37,7 @@
 .favourite {
   position: relative;
   aspect-ratio: 1;
-  width: calc(40px + 4vw);
+  width: calc(30px + 3.5vw);
 }
 
 .image {
