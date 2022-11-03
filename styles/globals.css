@@ -27,6 +27,11 @@ p {
   color: rgb(53, 43, 43);
 }
 
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .main {
   overflow: hidden;
   min-height: 100vh;

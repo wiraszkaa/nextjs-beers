@@ -1,4 +1,5 @@
 .navigation {
+  -webkit-tap-highlight-color: transparent;
   min-width: 380px;
   display: flex;
   justify-content: space-between;
@@ -17,6 +18,11 @@
   padding-left: 5%;
   font-size: calc(1rem + 1vw);
   text-transform: uppercase;
+}
+
+.logo:hover {
+  color: rgb(191, 191, 191);
+  transition: 0.5s;
 }
 
 .button {
